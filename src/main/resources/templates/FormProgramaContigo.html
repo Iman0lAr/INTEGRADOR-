@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Municipalidad Provincial de Chiclayo</title>
+    <link rel="icon" href="../imagenes/Escudo_de_Chiclayo.PNG" type="image/x-icon"> 
+    <link rel="stylesheet" href="/MisEstilos/EstilosFormPC.css">
+    <link rel="stylesheet" href="/MisEstilos/EstilosNavbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <header th:replace="~{Componentes/Header::cabezera}" ></header>
+    <aside th:replace="~{Componentes/Nabvar::nav_bar}"></aside>
+    
+    
+    <div style="padding-top: 90px" class="contenedor-formulario">
+       
+        <h3 style=" padding-bottom: 15px;padding-left: 30px;">Registro de Personas para el programa contigo</h3></div>
+        <div class="contenedor-subformulario">
+            <div class="agrupador-cuadros">
+                <label for="tipo-documento">Tipo de Documento de Identidad</label>
+                <select name="tipo_documento" id="tipo-documento">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="dni">DNI</option>
+                    <option value="pasaporte">Pasaporte</option>
+                </select>
+            </div>
+            <div class="agrupador-cuadros">
+                <label>DNI</label>
+                <input type="text" name="dni">
+            </div>
+            <div class="agrupador-cuadros">
+                <button class="boton" type=" button">
+                    <i class="fas fa-search"></i> Buscar
+                </button>
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Nombres</label>
+                <input type="text" name="nombres">
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Apellido Paterno</label>
+                <input type="text" name="apellido_paterno">
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Apellido Materno</label>
+                <input type="text" name="apellido_materno">
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="tipo-sexo">Sexo</label>
+                <select name="tipo_sexo" id="tipo-sexo">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Edad:</label>
+                <input type="text" name="edad">
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Fecha de Nacimiento</label>
+                <input type="date" name="fecha_nacimiento">
+            </div>
+            <div class="agrupador-cuadros">
+                <label>¿Pertenece a un Pueblo/Comunidad Indigena</label>
+                <input type="text" name="edad">
+            </div>
+            <div class="agrupador-cuadros">
+                <label>¿Se comunica con alguna lengua originaria</label>
+                <input type="text" name="lengua">
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="antepasado">Por su antepasados y de acuerdo a sus costumbres udtedes  se considera</label>
+                <select name="antepasado" id="antepasado">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="Quechua">Quechua</option>
+                    <option value="Aymara">Aymara</option>
+                </select>
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="tipo-sexo">¿Maximo nivel de estudios alcanzados</label>
+                <select name="tipo_sexo" id="tipo-sexo">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="completo">Tecnico Completo</option>
+                    <option value="a terminar">A terminar</option>
+                    <option value="no estudia">No estudia</option>
+                </select>
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Especifique:</label>
+                <input type="text" name="Especifique">
+            </div>
+            <div class="agrupador-cuadros2">
+            </div>
+        </div>
+        <div class="titulo-datos">
+           <h3> Direccion</h3>
+        </div>
+        <div class="contenedor-subformulario">
+            <div class="agrupador-cuadros">
+                <label for="Departamento">Departamento</label>
+                <select name="Departamento" id="Departamento">
+                    <option value="" disabled selected>Seleccione una departamento</option>
+                    <option value="Lambayeque">Lambayeque</option>
+                    <option value="Chiclayo">Tumbes</option>
+                    <option value="Eten">Lima</option>         
+                </select>
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="distritos">Distrito</label>
+                <select name="distritos" id="distritos">
+                    <option value="" disabled selected>Seleccione un distrito</option>
+                    <option value="Lambayeque">Monsefu</option>
+                    <option value="Chiclayo">Chiclayo</option>
+                    <option value="Eten">Jose Leonardo Ortiz</option>         
+                </select>
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Centro Poblado</label>
+                <input type="text" name="Centro Poblado">
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Nombre de la Via</label>
+                <input type="text" name="via">
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Numero</label>
+                <input type="text" name="numero">
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Referencia</label>
+                <input type="text" name="apellido_materno">
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Telefono Fijo</label>
+                <input type="text" name="celular">
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Telefono Celular</label>
+                <input type="text" name="celular">
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Correo Electronico</label>
+                <input type="text" name="correo-electronico">
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="certificado">¿Adjunta certificado de discapacidad?</label>
+                <button  type="button" class="btn-si" >Sí</button>
+                <button type="button" class="btn-no">No</button>
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Numero de Certificado</label>
+                <input type="text" name="certificado">
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Fecha de Emision</label>
+                <input type="date" name="Fecha_Emision">
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="certificado">¿Acepta que se traslade sus datos para el registro nacional de personas con discapacidad?</label>
+                <button type="button" class="btn-si" >Sí</button>
+                <button type="button" class="btn-no">No</button>
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="menor-edad">¿La persona con discapacidad es menor de edad?</label>
+                <button type="button" class="btn-si" >Sí</button>
+                <button type="button" class="btn-no">No</button>
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="certificado">¿La persona con discapacidad severa manifiesta su voluntad?</label>
+                <button type="button" class="btn-si" >Sí</button>
+                <button type="button" class="btn-no">No</button>
+            </div>
+        </div>
+        <div class="titulo-datos">
+            <h3> Datos de la/el autorizada/o</h3>
+         </div>
+         <div class="contenedor-subformulario">
+            <div class="agrupador-cuadros">
+                <label for="tipo-documento">Tipo de Documento de Identidad</label>
+                <select name="tipo_documento" id="tipo-documento">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="dni">DNI</option>
+                    <option value="pasaporte">Pasaporte</option>
+                </select>
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" >
+            </div>
+            <div class="agrupador-cuadros2">
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres" >
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="apellido_paterno">Apellido Paterno</label>
+                <input type="text" id="apellido_paterno" name="apellido_paterno" >
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="apellido_materno">Apellido Materno</label>
+                <input type="text" id="apellido_materno" name="apellido_materno" >
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="celular">Teléfono Celular</label>
+                <input type="text" id="celular" name="celular" >
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="correo">Correo Electrónico</label>
+                <input type="email" id="correo" name="correo" >
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="tipo-relacion">Parentesco</label>
+                <select name="tipo-relacion" id="tipo-relacion">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="Padre">Padre</option>
+                    <option value="Madre">Madre</option>
+                    <option value="Hijo">Hijo</option>
+                </select>
+            </div>
+            <div class="agrupador-cuadros">
+                <label>Adjunte informe de condición social</label>
+                <button type="button" class="btn-si">Sí</button>
+                <button type="button" class="btn-no">No</button>
+            </div>
+            <div class="agrupador-cuadros">
+                <button type="button"> Cargar archivo</button>
+            </div>
+            <div class="agrupador-cuadros2">
+            </div>
+            <div class="agrupador-cuadros">
+                <label for="archivo" class="upload-label">Cargar archivo</label>
+                <input type="file" id="archivo" class="upload-input" />
+            </div>
+            <div class="agrupador-cuadros2">
+            </div>
+            <div class="agrupador-cuadros2">
+            </div>
+        </div>
+        <div class="estilo-btn">
+            <button type="button" class="btn-guardar">
+                <i class="fas fa-save"></i> Guardar
+            </button>
+            <button type="button" class="btn-cancelar">
+                <i class="fas fa-times"></i> Cancelar
+            </button>
+        </div>
+    </div>
+    
+     <script src="/MisScripts/script_Nabvar.js"></script>
+</body>
+</html>
